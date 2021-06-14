@@ -713,8 +713,14 @@
   .container {
     width: 500px;
   }
-  .home-nav {
-    background-color: #FfFfFf;
+}
+
+@media (max-width: 600px) and (max-width: 720px) {
+  .container {
+    width: 600px;
+  }
+  .navbar {
+    background-color: #F2F2F2;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
@@ -722,7 +728,7 @@
             box-shadow: 0px 1px 10px #999;
     z-index: 1;
   }
-  .home-nav .container {
+  .navbar .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -733,25 +739,23 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .home-nav .container #click:checked ~ .menu-button i:before {
+  .navbar .container #click:checked ~ .menu-button i:before {
     content: "⛌";
-    display: block;
   }
-  .home-nav .container #click:checked ~ .home-nav-box {
+  .navbar .container #click:checked ~ .nav {
     left: 0%;
-    display: block;
   }
-  .home-nav .container .menu-button {
+  .navbar .container .menu-button {
     margin-right: 40%;
   }
-  .home-nav .container .menu-button .icon {
+  .navbar .container .menu-button i {
     display: block;
   }
-  .home-nav .container .home-nav-box {
+  .navbar .container .nav {
     padding: 0 30px 30px 30px;
     position: fixed;
     top: 63px;
-    left: -100%;
+    left: -40%;
     background-color: #333a44;
     height: 94.5vh;
     width: 40%;
@@ -769,7 +773,7 @@
             flex-direction: column;
     text-align: left;
   }
-  .home-nav .container .home-nav-box .home-nav-list {
+  .navbar .container .nav .nav-list {
     margin: 40px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -777,13 +781,13 @@
             flex-direction: column;
     display: block;
     text-align: left;
-    -webkit-transition: .5s;
-    transition: .5s;
+    -webkit-transition: .3s;
+    transition: .3s;
   }
-  .home-nav .container .home-nav-box .home-nav-list .home-nav-item {
+  .navbar .container .nav .nav-list .nav-item {
     margin: 40px 0;
   }
-  .home-nav .container .home-nav-box .home-nav-list .home-nav-item .home-nav-nav-item-link {
+  .navbar .container .nav .nav-list .nav-item .nav-item-link {
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -791,17 +795,16 @@
     color: #E5ECF4;
     display: block;
   }
-  .home-nav .container .home-nav-box .home-nav-list .home-nav-item .home-nav-item-link:hover {
+  .navbar .container .nav .nav-list .nav-item .nav-item-link:hover {
     color: #fcb72b;
   }
-  .home-nav .container .home-nav-box .home-nav-button {
+  .navbar .container .nav .get-scootin {
     margin-top: auto;
     width: 100%;
   }
-  .home-nav .container .home-nav-box .home-nav-button:hover {
-    background-color: white;
-    color: #fcb72b;
-  }
+}
+
+@media (max-width: 600px) {
   .home-intro .container .home-intro-box-big .home-intro-image-one {
     display: none;
     border: 1px solid white;

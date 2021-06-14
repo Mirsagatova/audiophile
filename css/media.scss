@@ -804,79 +804,77 @@
     .container {
         width: 500px;
     }
-    .home-nav {
-        background-color: #FfFfFf;
-        position: sticky;
-        top: 0;
-        box-shadow: 0px 1px 10px #999;
-        z-index: 1;
-        .container {
-            display: flex;
-            align-items: center;
-            justify-content: flex-start;
-            
-            #click:checked ~ .menu-button i:before {
-                content: "⛌";
-                display: block;
-            }
-            #click:checked ~ .home-nav-box {
-                left: 0%;
-                display: block;
-            }
-            .menu-button {
-                margin-right: 40%;
-                .icon {
-                    display: block;
-                }
     
-            }
-            .home-nav-box-title {
-            }
-            .home-nav-box {
-                padding: 0 30px 30px 30px;
-                position: fixed;
-                    top: 63px;
-                    left: -100%;
-                    background-color: rgba(51, 58, 68, 1);
-                    height: 94.5vh;
-                    width: 40%;
-                    display: flex;
-                    justify-content: center;
-                    align-content: space-between;
-                    flex-direction: column;
-                    text-align: left;
-                .home-nav-list {
-                    margin: 40px 0;
-                    flex-direction: column;
-                    display: block;
-                    text-align: left;
-                    transition: .5s;
-                    .home-nav-item {
+    
+        .navbar {
+            background-color: #F2F2F2;
+            position: sticky;
+            top: 0;
+            box-shadow: 0px 1px 10px #999;
+            z-index: 1;
+            .container {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                #click:checked ~ .menu-button i:before {
+                    content: "⛌";
+                }
+                #click:checked ~ .nav {
+                    left: 0%;
+                }
+                .menu-button {
+                    margin-right: 40%;
+                    i {
+                        display: block;
+                    }
+        
+                }
+                .logo-name {
+                }
+                .nav {
+                    padding: 0 30px 30px 30px;
+                    position: fixed;
+                        top: 63px;
+                        left: -40%;
+                        background-color: rgba(51, 58, 68, 1);
+                        height: 94.5vh;
+                        width: 40%;
+                        display: flex;
+                        justify-content: center;
+                        align-content: space-between;
+                        flex-direction: column;
+                        text-align: left;
+                    .nav-list {
                         margin: 40px 0;
-                        .home-nav-nav-item-link {
-                            font-style: normal;
-                            font-weight: bold;
-                            font-size: 18px;
-                            line-height: 25px;
-                            color: #E5ECF4;
-                            display: block;
-                        }
-                        .home-nav-item-link:hover {
-                            color: rgba(252, 183, 43, 1);
+                        flex-direction: column;
+                        display: block;
+                        text-align: left;
+                        transition: .3s;
+                        .nav-item {
+                            margin: 40px 0;
+                            .nav-item-link {
+                                font-style: normal;
+                                font-weight: bold;
+                                font-size: 18px;
+                                line-height: 25px;
+                                color: #E5ECF4;
+                                display: block;
+                            }
+                            .nav-item-link:hover {
+                                color: rgba(252, 183, 43, 1);
+                            }
                         }
                     }
-                }
-                .home-nav-button {
-                    margin-top: auto;
-                    width: 100%;
-                }
-                .home-nav-button:hover {
-                    background-color: rgba(255, 255, 255, 1);
-                    color: rgba(252, 183, 43, 1);
+                    .get-scootin {
+                        margin-top: auto;
+                        width: 100%;
+                    }
+                    .get-scootin:hover {
+                    }
                 }
             }
+            
         }
-        
     }
 
     .home-intro {
